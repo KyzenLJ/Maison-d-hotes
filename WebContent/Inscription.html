@@ -1,0 +1,217 @@
+<!Doctype html>
+<html>
+    <head>
+            <meta charset="utf-8" />
+            <title>Ma maison d'hôte pas comme les autres (Inscriptions)</title>
+            <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/Inscription.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+            <nav>
+                    <div class="nav-wrapper">
+                      <a href="#" class="brand-logo">Réservation</a>
+                      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                      <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="index.html">La maison</a></li>
+                        <li><a href="PresentationRegion.html">La région</a></li>
+                        <li><a href="Inscription.html">Réservation</a></li>
+                      </ul>
+                      <ul class="side-nav" id="mobile-demo">
+                          <li><a href="index.html">La maison</a></li>
+                          <li><a href="PresentationRegion.html">La région</a></li>
+                          <li><a href="Inscription.html">Réservation</a></li>
+                        </ul>
+                    </div>
+                  </nav>
+        <p>Merci de remplir les champs suivants afin de venir vivre une expérience hors du commun...</p>
+<div class="row">
+    <form method="post" action="ReservationServlet" class="col s12 m9 l6 ">
+      <div class="row">
+        <div class="input-field col s6" name = "prenom">
+         <i class="material-icons prefix">person</i>   
+         <label for="icon_person">Prénom</label>  
+          <input id="icon_person" type="text" class="validate">
+        </div>
+        <div class="input-field col s6">
+            <i class="material-icons prefix">person</i> 
+            <label for="icon_person">Nom</label>    
+            <input id="icon_person" type="text" class="validate">
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">home</i>
+          <label for="icon_Adress">Adresse</label>
+          <input  id="icon_Adress" type="text" class="validate">
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">phone</i>
+            <label for="icon_telephone">Téléphone</label>
+            <input id="icon_telephone" type="tel" class="validate">
+            
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">email</i> 
+          <label for="icon_email" data-error="wrong" data-success="right">Email</label>
+          <input id="icon_email" type="email" class="validate">
+          
+        </div>
+      </div>
+      <p>
+            <i class="material-icons prefix">directions_car</i>  
+        <input id="icon_directions_car" type="checkbox" id="test6"  />
+        <label for="icon_directions_car">Parking</label>
+      </p>
+      <p>
+            <i class="material-icons prefix">pets</i>
+        <input id="icon_pets" type="checkbox" id="test6"  />
+        <label for="icon_pets">Animal</label>
+      </p>
+      <p>
+            <i class="material-icons prefix">smoking_rooms</i>
+        <input id="icon_smoking_rooms" type="checkbox" id="test6"  />
+        <label for="icon_smoking_rooms">Fumeur</label>
+      </p>
+      <p>
+            <i class="material-icons prefix">euro_symbol</i> 
+        <input id="icon_euro_symbol" type="checkbox" id="test6" checked="checked" />
+        <label for="icon_euro_symbol">Me faire un don de 1000€ (Contractuel)</label>
+      </p>
+      <p>
+            <i class="material-icons prefix"> beach_access</i> 
+        <input name="group1" type="radio" id="icon_beach_access" />
+        <label for="icon_beach_access">Séjour loisir</label>
+      </p>
+      <p>
+            <i class="material-icons prefix">computer</i> 
+        <input  name="group1" type="radio" id="icon_computer" />
+        <label for="icon_computer">Séjour professionnel</label>
+      </p>
+      <div class="input-field col s12">
+            
+            <select>
+              <option value="" disabled selected>Nombre de personnes</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="3">4+</option>
+            </select>
+          </div>
+
+          <div class="input-field col s12">
+                
+                <select>
+                  <option value="" disabled selected>Région d'origine</option>
+                  <option value="1">Auvergne-Rhône-Alpes</option>
+                  <option value="2">Bourgogne-Franche-Comté</option>
+                  <option value="3">Bretagne</option>
+                  <option value="4">Centre-Val de Loire</option>
+                  <option value="5">Corse</option>
+                  <option value="6">Grand Est</option>
+                  <option value="7">Guadeloupe</option>
+                  <option value="8">Guyane</option>
+                  <option value="9">Hauts-de-France</option>
+                  <option value="10">Île-de-France</option>
+                  <option value="11">La Réunion</option>
+                  <option value="12">Martinique</option>
+                  <option value="13">Mayotte</option>
+                  <option value="14">Normandie</option>
+                  <option value="15">Nouvelle-Aquitaine</option>
+                  <option value="16">Occitanie</option>
+                  <option value="17">Pays de la Loire</option>
+                  <option value="18">Provence-Alpes-Côte d'Azur</option>
+                  <option value="19">Hors France</option>
+                </select>
+              </div>
+
+        <div class="input-field col s12">              
+            <select>
+            <option value="" disabled selected>Durée du séjour</option>
+                <option value="1">1 nuit</option>   
+                <option value="2">2 nuits</option>
+                <option value="3">5 nuits</option>
+                <option value="3">6 nuits</option>
+            </select>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Estimation du tarif
+                <i class="material-icons right">euro_symbol</i>
+              </button>
+              <p>Petit rappel de ce que vous allez manquer si vous ne réservez pas !</p>
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="maisonDeCharme.jpg"></a>
+            <a class="carousel-item" href="#two!"><img src="chambre.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="petitDej.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="graffParis.jpg"></a>
+            <a class="carousel-item" href="#five!"><img src="copine1.jpg"></a>
+            <a class="carousel-item" href="#six!"><img src="transports.jpg"></a>
+            <a class="carousel-item" href="#seven!"><img src="pote1.jpg"></a>
+            <a class="carousel-item" href="#eight!"><img src="pontA3.jpg"></a>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Envoi de la demande
+               <i class="material-icons right">send</i>
+              </button>
+    </form>
+  </div>
+      <div class="row">
+          <div class="col s12 m7">
+            <div class="card">
+              <div class="card-image">
+                <img src="catacombes.jpg">
+                <span class="card-title">Vous ne regretterez pas.</span>
+              </div>
+              <div class="card-content">
+                <p>Le sourire de nos anciens pensionnaires en atteste...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  	
+  <div>
+<p><input type="image" id="monBouton" value="remonter" src="back-to-top-squelette.jpg" alt="Remonter" style="text-align:center; width:100px" BORDER="0"></p>
+
+<a class="mt-facebook mt-share-inline-square-sm" height="auto"
+href="https://www.facebook.com/sharer/sharer.php?u=">
+  <img src="http://mojotech-static.s3.amazonaws.com/facebook@2x.png">
+</a>
+<a class="mt-twitter mt-share-inline-square-sm"
+href="http://twitter.com/intent/tweet?text=&amp;url=">
+  <img src="http://mojotech-static.s3.amazonaws.com/twitter@2x.png">
+</a>
+<a class="mt-linkedin mt-share-inline-square-sm"
+href="http://www.linkedin.com/shareArticle?mini=true&amp;url=&amp;summary=">
+  <img src="http://mojotech-static.s3.amazonaws.com/linkedin@2x.png">
+</a>
+<a class="mt-google mt-share-inline-square-sm"
+href="https://plus.google.com/share?url=">
+  <img src="http://mojotech-static.s3.amazonaws.com/google@2x.png">
+</a>
+<a class="mt-pinterest mt-share-inline-square-sm"
+href="http://www.pinterest.com/pin/create/button/?url=&amp;media=&amp;guid=1234&amp;description=">
+  <img src="http://mojotech-static.s3.amazonaws.com/pinterest@2x.png">
+</a>
+</div>
+<!--Import jQuery before materialize.js-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+    </body>
+    <footer>
+            <div class="footer-copyright">
+              <div class="container">
+              © 2017 Copyright Design by Moi
+              
+              </div>
+            </div>
+          </footer>
+</html>
