@@ -34,10 +34,10 @@ public class ReservationServlet extends HttpServlet {
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
-	//	 Récupération des r�servations
-		request.setAttribute("r�servations", ReservationManager.getInstance().getReservations().values());
+	//	 Récupération des réservations
+		request.setAttribute("réservations", ReservationManager.getInstance().getReservations().values());
 
-		getServletContext().getRequestDispatcher("/istereservations.jsp").forward(request, response);
+		getServletContext().getRequestDispatcher("/listereservations.jsp").forward(request, response);
 	}
 
 	/**
@@ -54,16 +54,27 @@ public class ReservationServlet extends HttpServlet {
 		String adresse = request.getParameter("adresse");
 		String telephone = request.getParameter("telephone");
 		String email = request.getParameter("email");
+		boolean etatCheckBoxAnimal = request.getParameter( "animal" ) != null;
+		boolean etatCheckBoxParking = request.getParameter( "parking" ) != null;
+		boolean etatCheckBoxFumeur = request.getParameter( "fumeur" ) != null;
+		boolean etatCheckBoxDon = request.getParameter( "don" ) != null;
+		int nbrPersonne = request.getParameter();
+		int dureeSejour = request.getParameter("duree");
 
-		// Tout est en règle => Création du nouveau ticket
+		// Tout est en règle => Création d'une nouvelle résa
 		Reservation newReservation = new ReservationImpl();
 		newReservation.setNom(nom);
 		newReservation.setPrenom(prenom);
 		newReservation.setAdresse(adresse);
 		newReservation.setTelephone(telephone);
 		newReservation.setEmail(email);
+		newReservation.setAnimal(etatCheckBoxAnimal);
+		newReservation.setParking(etatCheckBoxParking);
+		newReservation.setFumeur(etatCheckBoxFumeur);
+		newReservation.setDon(etatCheckBoxDon);
 		
-		request.setAttribute("r�servations",newReservation);
+		
+		request.setAttribute("réservations",newReservation);
 		getServletContext().getRequestDispatcher("/listereservations.jsp").forward(request, response);
 	}
 

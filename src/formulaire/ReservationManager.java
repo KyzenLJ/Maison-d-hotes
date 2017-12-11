@@ -22,7 +22,7 @@ public class ReservationManager {
 	
 //	public void addTicket(Reservation reservation) throws Exception{
 //		if(reservations.containsKey(reservation.getDateEnregistrement()))
-//			throw new Exception("Cette date est déjà réservée !");
+//			throw new Exception("Cette date est dÃ©jÃ  rÃ©servÃ©e !");
 //		
 //		reservation.setDateEnregistrement(new Date());
 //		reservations.put(reservation.getDateEnregistrement(), reservation);

@@ -20,28 +20,27 @@
 			<th>Nom</th>
 			<th>Prenom</th>
 			<th>Téléphone</th>
-			<th>Durée du Séjour</th>
-			<th>Date</th>
+			<th>Adresse</th>
+			<th>e-mail</th>
+			<th>Animal de compagnie</th>
+			<th>Parking</th>
+			<th>Fumeur</th>
+			<th>Don</th>
+			
 		</tr>
-		<td> ${newReservation.prenom}</td>
-<%-- 		<%
-			SimpleDateFormat dateFormater = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-			Collection<Reservation> listReservations = (Collection<Reservation>) request.getAttribute("reservations");
-			if(listReservations != null){
-				Iterator it = listReservations.iterator() ;
-			    while (it.hasNext()){
-			    	Reservation serveur=(Reservation) it.next() ;
-		%>
-					<tr>
-						<td><%=serveur.getNom()%></td>
-						<td><%=serveur.getPrenom()%></td>
-						<td><%=serveur.getTelephone()%></td>
-						<td><%=serveur.getDureeSejour()%></td>
-						<td><%=dateFormater.format(serveur.getDateEnregistrement())%></td>
-					</tr>
-		<%      }
-			}
-		%> --%>
+
+			<td><%=request.getParameter("nom") %></td>
+			<td><%=request.getParameter("prenom") %></td>
+			<td><%=request.getParameter("telephone") %></td>
+			<td><%=request.getParameter("adresse") %></td>
+			<td><%=request.getParameter("email") %></td>
+			<td><%=request.getParameter("animal") %></td>
+			<td><%=request.getParameter("parking") %></td>
+			<td><%=request.getParameter("fumeur") %></td>
+			<td><%=request.getParameter("don") %></td>
+			<td><%=request.getParameter("duree") %></td>
+			<td><%=request.getParameter("participant") %></td>
+
 		</table>
 		<a href="Inscription.html" >Retour au formulaire</a>
 </body>

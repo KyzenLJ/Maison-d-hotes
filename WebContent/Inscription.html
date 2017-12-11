@@ -40,18 +40,18 @@
 			<div class="row">
 				<div class="input-field col s6">
 					<i class="material-icons prefix">person</i> <label>Nom</label> <input
-						type="text" class="validate">
+						type="text" class="validate" name="nom">
 				</div>
 				<div class="input-field col s6">
 					<i class="material-icons prefix">person</i> <label>Prénom</label> <input
-						type="text" class="validate">
+						type="text" class="validate" name="prenom">
 				</div>
 
 			</div>
 			<div class="row">
 				<div class="input-field col s12">
 					<i class="material-icons prefix">home</i> <label for="icon_Adress">Adresse</label>
-					<input id="icon_Adress" type="text" class="validate">
+					<input id="icon_Adress" type="text" class="validate" name="adresse">
 
 				</div>
 			</div>
@@ -59,7 +59,7 @@
 				<div class="input-field col s12">
 					<i class="material-icons prefix">phone</i> <label
 						for="icon_telephone">Téléphone</label> <input id="icon_telephone"
-						type="tel" class="validate">
+						type="tel" class="validate" name="telephone">
 
 				</div>
 			</div>
@@ -67,27 +67,27 @@
 				<div class="input-field col s12">
 					<i class="material-icons prefix">email</i> <label for="icon_email"
 						data-error="wrong" data-success="right">Email</label> <input
-						id="icon_email" type="email" class="validate">
+						id="icon_email" type="email" class="validate" name="email">
 
 				</div>
 			</div>
 			<p>
 				<i class="material-icons prefix">directions_car</i> <input
-					id="icon_directions_car" type="checkbox" /> <label
+					id="icon_directions_car" type="checkbox"  name="parking" /> <label
 					for="icon_directions_car">Parking</label>
 			</p>
 			<p>
 				<i class="material-icons prefix">pets</i> <input id="icon_pets"
-					type="checkbox" /> <label for="icon_pets">Animal</label>
+					type="checkbox"  name="animal" /> <label for="icon_pets">Animal</label>
 			</p>
 			<p>
 				<i class="material-icons prefix">smoking_rooms</i> <input
-					id="icon_smoking_rooms" type="checkbox" /> <label
+					id="icon_smoking_rooms" type="checkbox"  name="fumeur" /> <label
 					for="icon_smoking_rooms">Fumeur</label>
 			</p>
 			<p>
 				<i class="material-icons prefix">euro_symbol</i> <input
-					id="icon_euro_symbol" type="checkbox" checked="checked" /> <label
+					id="icon_euro_symbol" type="checkbox" checked="checked" name="don" /> <label
 					for="icon_euro_symbol">Me faire un don de 1000€
 					(Contractuel)</label>
 			</p>
@@ -103,12 +103,12 @@
 			</p>
 			<div class="input-field col s12">
 
-				<select>
+				<select name="participant">
 					<option value="" disabled selected>Nombre de personnes</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
-					<option value="3">4+</option>
+					<option value="4">4</option>
 				</select>
 			</div>
 
@@ -139,12 +139,14 @@
 			</div>
 
 			<div class="input-field col s12">
-				<select>
+				<select name="duree">
 					<option value="" disabled selected>Durée du séjour</option>
-					<option value="1">1 nuit</option>
-					<option value="2">2 nuits</option>
-					<option value="3">5 nuits</option>
-					<option value="3">6 nuits</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
 				</select>
 			</div>
 			<button class="btn waves-effect waves-light" type="submit"

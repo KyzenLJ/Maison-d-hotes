@@ -29,4 +29,16 @@ public interface Reservation {
 	
 	public Date getDateEnregistrement();
 	public void setDateEnregistrement(Date date);
+	
+	public boolean getAnimal();
+	public void setAnimal(boolean etatCheckBoxAnimal);
+	
+	public boolean getParking();
+	public void setParking(boolean etatCheckBoxParking);
+	
+	public boolean getFumeur();
+	public void setFumeur(boolean etatCheckBoxFumeur);
+	
+	public boolean getDon();
+	public void setDon(boolean etatCheckBoxDon);
 }
