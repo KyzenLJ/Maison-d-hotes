@@ -33,10 +33,11 @@
 			</ul>
 		</div>
 	</nav>
-	<p>Merci de remplir les champs suivants afin de venir vivre une
-		expérience hors du commun...</p>
+
 	<div class="row">
-		<form method="post" action="ReservationServlet" class="col s12 m9 l6 ">
+		<form method="post" action="ReservationServlet" class="col s12 m9 l6 offset-l3 ">
+				<p>Merci de remplir les champs suivants afin de venir vivre une
+						expérience hors du commun...</p>
 			<div class="row">
 				<div class="input-field col s6">
 					<i class="material-icons prefix">person</i> <label>Nom</label> <input
@@ -71,34 +72,53 @@
 
 				</div>
 			</div>
+			<div class="row">
+				<div class="input-field col s12">	
+					 <label for="date_arrivee">Date d'arrivée</label> 
+					 <input id="date_arrivee" type="date" class="datepicker" name="dateArrivee">
+				</div>
+			</div>
+			<div class="input-field col s12">
+				Durée du séjour 
+				<select class="validate" name="duree">
+					<option value="" disabled selected></option>
+					<option value="1">1 nuit</option>
+					<option value="2">2 nuits</option>
+					<option value="3">3 nuits</option>
+					<option value="4">4 nuits</option>
+					<option value="5">5 nuits</option>
+					<option value="6">6 nuits</option>
+				</select>
+			</div>
+
 			<p>
 				<i class="material-icons prefix">directions_car</i> <input
-					id="icon_directions_car" type="checkbox"  name="parking" /> <label
+					id="icon_directions_car" type="checkbox"  name="parking" value="oui"/> <label
 					for="icon_directions_car">Parking</label>
 			</p>
 			<p>
 				<i class="material-icons prefix">pets</i> <input id="icon_pets"
-					type="checkbox"  name="animal" /> <label for="icon_pets">Animal</label>
+					type="checkbox"  name="animal" value="oui" /> <label for="icon_pets">Animal</label>
 			</p>
 			<p>
 				<i class="material-icons prefix">smoking_rooms</i> <input
-					id="icon_smoking_rooms" type="checkbox"  name="fumeur" /> <label
+					id="icon_smoking_rooms" type="checkbox"  name="fumeur" value="oui"/> <label
 					for="icon_smoking_rooms">Fumeur</label>
 			</p>
 			<p>
 				<i class="material-icons prefix">euro_symbol</i> <input
-					id="icon_euro_symbol" type="checkbox" checked="checked" name="don" /> <label
+					id="icon_euro_symbol" type="checkbox" checked="checked" name="don" value="oui"/> <label
 					for="icon_euro_symbol">Me faire un don de 1000€
 					(Contractuel)</label>
 			</p>
 			<p>
 				<i class="material-icons prefix"> beach_access</i> <input
-					name="group1" type="radio" id="icon_beach_access" /> <label
+					name="typeSejour" type="radio" id="icon_beach_access" value="loisir" /> <label
 					for="icon_beach_access">Séjour loisir</label>
 			</p>
 			<p>
-				<i class="material-icons prefix">computer</i> <input name="group1"
-					type="radio" id="icon_computer" /> <label for="icon_computer">Séjour
+				<i class="material-icons prefix">computer</i> <input name="typeSejour"
+					type="radio" id="icon_computer" value="pro" /> <label for="icon_computer">Séjour
 					professionnel</label>
 			</p>
 			<div class="input-field col s12">
@@ -114,70 +134,64 @@
 
 			<div class="input-field col s12">
 
-				<select>
+				<select name="region">
 					<option value="" disabled selected>Région d'origine</option>
-					<option value="1">Auvergne-Rhône-Alpes</option>
-					<option value="2">Bourgogne-Franche-Comté</option>
-					<option value="3">Bretagne</option>
-					<option value="4">Centre-Val de Loire</option>
-					<option value="5">Corse</option>
-					<option value="6">Grand Est</option>
-					<option value="7">Guadeloupe</option>
-					<option value="8">Guyane</option>
-					<option value="9">Hauts-de-France</option>
-					<option value="10">Île-de-France</option>
-					<option value="11">La Réunion</option>
-					<option value="12">Martinique</option>
-					<option value="13">Mayotte</option>
-					<option value="14">Normandie</option>
-					<option value="15">Nouvelle-Aquitaine</option>
-					<option value="16">Occitanie</option>
-					<option value="17">Pays de la Loire</option>
-					<option value="18">Provence-Alpes-Côte d'Azur</option>
-					<option value="19">Hors France</option>
+					<option value="Auvergne-Rhône-Alpes">Auvergne-Rhône-Alpes</option>
+					<option value="Bourgogne-Franche-Comté">Bourgogne-Franche-Comté</option>
+					<option value="Bretagne">Bretagne</option>
+					<option value="Centre-Val de Loire">Centre-Val de Loire</option>
+					<option value="Corse">Corse</option>
+					<option value="Grand Est">Grand Est</option>
+					<option value="Guadeloupe">Guadeloupe</option>
+					<option value="Guyane">Guyane</option>
+					<option value="Hauts-de-France">Hauts-de-France</option>
+					<option value="Île-de-France">Île-de-France</option>
+					<option value="La Réunion">La Réunion</option>
+					<option value="Martinique">Martinique</option>
+					<option value="Mayotte">Mayotte</option>
+					<option value="Normandie">Normandie</option>
+					<option value="Nouvelle-Aquitaine">Nouvelle-Aquitaine</option>
+					<option value="Occitanie">Occitanie</option>
+					<option value="Pays de la Loire">Pays de la Loire</option>
+					<option value="Provence-Alpes-Côte d'Azur">Provence-Alpes-Côte d'Azur</option>
+					<option value="Hors France">Hors France</option>
 				</select>
 			</div>
 
-			<div class="input-field col s12">
-				<select name="duree">
-					<option value="" disabled selected>Durée du séjour</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-				</select>
-			</div>
+
 			<button class="btn waves-effect waves-light" type="submit"
 				name="action">
 				Estimation du tarif <i class="material-icons right">euro_symbol</i>
 			</button>
-			<p>Petit rappel de ce que vous allez manquer si vous ne réservez
-				pas !</p>
-			<div class="carousel">
-				<a class="carousel-item" href="#one!"><img
-					src="maisonDeCharme.jpg" alt="intérieur maison"></a> <a
-					class="carousel-item" href="#two!"><img src="chambre.jpg"
-					alt="chambre"></a> <a class="carousel-item" href="#three!"><img
-					src="petitDej.jpg" alt="petit déjeuner"></a> <a
-					class="carousel-item" href="#four!"><img src="graffParis.jpg"
-					alt="musée"></a> <a class="carousel-item" href="#five!"><img
-					src="copine1.jpg" alt="masseuse"></a> <a class="carousel-item"
-					href="#six!"><img src="transports.jpg"
-					alt="tai-chi position de l'arbre"></a> <a class="carousel-item"
-					href="#seven!"><img src="pote1.jpg" alt="relation amicale"></a>
-				<a class="carousel-item" href="#eight!"><img src="pontA3.jpg"
-					alt="pont Alexandre III"></a>
-			</div>
+
 			<button class="btn waves-effect waves-light" type="submit"
 				name="action">
 				Envoi de la demande <i class="material-icons right">send</i>
 			</button>
+
+			<p>Petit rappel de ce que vous allez manquer si vous ne réservez
+				pas !</p>
+				<div class="carousel">
+						<a class="carousel-item" href="#one!"><img
+							src="maisonDeCharme.jpg" alt="intérieur maison"></a> <a
+							class="carousel-item" href="#two!"><img src="chambre.jpg"
+							alt="chambre"></a> <a class="carousel-item" href="#three!"><img
+							src="petitDej.jpg" alt="petit déjeuner"></a> <a
+							class="carousel-item" href="#four!"><img src="graffParis.jpg"
+							alt="musée"></a> <a class="carousel-item" href="#five!"><img
+							src="copine1.jpg" alt="masseuse"></a> <a class="carousel-item"
+							href="#six!"><img src="transports.jpg"
+							alt="tai-chi position de l'arbre"></a> <a class="carousel-item"
+							href="#seven!"><img src="pote1.jpg" alt="relation amicale"></a>
+						<a class="carousel-item" href="#eight!"><img src="pontA3.jpg"
+							alt="pont Alexandre III"></a>
+					</div>
+
 		</form>
 	</div>
+
 	<div class="row">
-		<div class="col s12 m7">
+		<div class="col s12 m7 l6 offset-l3">
 			<div class="card">
 				<div class="card-image">
 					<img src="catacombes.jpg" alt="satisfaction client"> <span

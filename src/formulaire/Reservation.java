@@ -31,14 +31,17 @@ public interface Reservation {
 	public void setDateEnregistrement(Date date);
 	
 	public boolean getAnimal();
-	public void setAnimal(boolean etatCheckBoxAnimal);
+	public void setAnimal(String etatCheckBoxAnimal);
 	
 	public boolean getParking();
-	public void setParking(boolean etatCheckBoxParking);
+	public void setParking(String etatCheckBoxParking);
 	
 	public boolean getFumeur();
-	public void setFumeur(boolean etatCheckBoxFumeur);
+	public void setFumeur(String etatCheckBoxFumeur);
 	
 	public boolean getDon();
-	public void setDon(boolean etatCheckBoxDon);
+	public void setDon(String etatCheckBoxDon);
+	
+	public String getTypeSejour();
+	public void setTypeSejour(String typeSejour);
 }

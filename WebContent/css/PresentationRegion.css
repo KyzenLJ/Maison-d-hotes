@@ -16,11 +16,11 @@ nav {
     background-size:cover;
     }
     iframe{
-    border-width: 0px;
-    width="800";
-    height="400";
+    display: block;
+    width:"800";
+    height:"400";
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto
     
 }
 #all{

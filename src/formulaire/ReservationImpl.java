@@ -99,6 +99,56 @@ public class ReservationImpl implements Reservation {
 		this.dateEnregistrement = date;
 		
 	}
+	@Override
+	public boolean getAnimal() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	@Override
+	public void setAnimal(String etatCheckBoxAnimal) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public boolean getParking() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	@Override
+	public void setParking(String etatCheckBoxParking) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public boolean getFumeur() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	@Override
+	public void setFumeur(String etatCheckBoxFumeur) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public boolean getDon() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	@Override
+	public void setDon(String etatCheckBoxDon) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public String getTypeSejour() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public void setTypeSejour(String typeSejour) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 	}
